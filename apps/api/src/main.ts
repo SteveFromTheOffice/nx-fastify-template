@@ -1,23 +1,16 @@
-import Fastify from 'fastify';
-import { app } from './app/app';
+import fastify from 'fastify';
+import { serializerCompiler, validatorCompiler } from 'fastify-zod-openapi';
 
-const host = process.env.HOST ?? 'localhost';
-const port = process.env.PORT ? Number(process.env.PORT) : 3000;
+import { UserRouter } from '@sfto/routers';
 
-// Instantiate Fastify with some config
-const server = Fastify({
-  logger: true,
-});
+const app = fastify();
 
-// Register your application as a normal plugin.
-server.register(app);
+app.setSerializerCompiler(serializerCompiler);
+app.setValidatorCompiler(validatorCompiler);
 
-// Start listening.
-server.listen({ port, host }, (err) => {
-  if (err) {
-    server.log.error(err);
-    process.exit(1);
-  } else {
-    console.log(`[ ready ] http://${host}:${port}`);
-  }
+// Routers.
+app.register(UserRouter);
+
+app.listen({ port: 3333 }).then(() => {
+  console.log('Server started on port 3333');
 });

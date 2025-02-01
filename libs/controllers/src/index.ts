@@ -1,1 +1,1 @@
-export * from './lib/controllers';
+export * from './user/getUserByIdController';
