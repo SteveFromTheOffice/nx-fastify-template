@@ -15,11 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "controllers": ["libs/controllers/src/index.ts"],
-      "routers": ["libs/routers/src/index.ts"],
-      "schema": ["libs/schema/src/index.ts"],
-      "services": ["libs/services/src/index.ts"],
-      "types": ["libs/types/src/index.ts"]
+      "@sfto/controllers": ["libs/controllers/src/index.ts"],
+      "@sfto/repositories": ["libs/repositories/src/index.ts"],
+      "@sfto/routers": ["libs/routers/src/index.ts"],
+      "@sfto/schema": ["libs/schema/src/index.ts"],
+      "@sfto/services": ["libs/services/src/index.ts"],
+      "@sfto/types": ["libs/types/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
