@@ -1,15 +1,15 @@
+.idea
 .nx/installation
 .nx/cache
 .nx/workspace-data
 
+dist
 node_modules
 tmp
 
 # Expo
-node_modules/
-.expo/
+.expo
 .yarn/
-dist/
 npm-debug.*
 *.jks
 *.p8
