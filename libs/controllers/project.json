@@ -1,0 +1,20 @@
+{
+  "name": "controllers",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/controllers/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/controllers",
+        "tsConfig": "libs/controllers/tsconfig.lib.json",
+        "packageJson": "libs/controllers/package.json",
+        "main": "libs/controllers/src/index.ts",
+        "assets": ["libs/controllers/*.md"]
+      }
+    }
+  }
+}
