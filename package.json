@@ -8,6 +8,8 @@
     "serve-mobile": "npx nx run mobile:serve",
     "serve-wearos": "npx nx run wearos:serve",
     "serve-web": "npx nx run web:serve",
+    "run-android": "npx nx run mobile:run-android",
+    "run-wearos": "npx nx run wearos:run-android",
     "build-api": "npx nx run api:build",
     "build-android": "npx nx run mobile:export --platform=android",
     "build-ios": "npx nx run mobile:export --platform=ios",
