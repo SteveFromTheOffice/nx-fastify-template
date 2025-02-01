@@ -1,0 +1,20 @@
+{
+  "name": "routers",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/routers/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/routers",
+        "tsConfig": "libs/routers/tsconfig.lib.json",
+        "packageJson": "libs/routers/package.json",
+        "main": "libs/routers/src/index.ts",
+        "assets": ["libs/routers/*.md"]
+      }
+    }
+  }
+}
