@@ -3,6 +3,7 @@
 .nx/workspace-data
 
 node_modules
+tmp
 
 # Expo
 node_modules/

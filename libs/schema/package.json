@@ -1,5 +1,5 @@
 {
-  "name": "schema",
+  "name": "@sfto/schema",
   "version": "0.0.1",
   "private": true,
   "type": "commonjs",
