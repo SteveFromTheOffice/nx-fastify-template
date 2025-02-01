@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "controllers": ["libs/controllers/src/index.ts"],
       "schema": ["libs/schema/src/index.ts"],
       "services": ["libs/services/src/index.ts"],
       "types": ["libs/types/src/index.ts"]
