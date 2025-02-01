@@ -4,8 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "api": "npx nx run api:serve",
-    "mobile": "npx nx run mobile:serve",
+    "serve-api": "npx nx run api:serve",
+    "serve-mobile": "npx nx run mobile:serve",
+    "serve-wearos": "npx nx run wearos:serve",
+    "serve-web": "npx nx run web:serve",
+    "build-api": "npx nx run api:build",
+    "build-android": "npx nx run mobile:export --platform=android",
+    "build-ios": "npx nx run mobile:export --platform=ios",
+    "build-web": "npx nx run web:export --platform=web",
+    "lint": "npx nx run-many --target=lint",
     "test": "npx nx run-many --target=test --passWithNoTests"
   },
   "repository": {

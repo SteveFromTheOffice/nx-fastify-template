@@ -1,5 +1,5 @@
 {
-  "name": "controllers",
+  "name": "@sfto/controllers",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/controllers/src",
   "projectType": "library",

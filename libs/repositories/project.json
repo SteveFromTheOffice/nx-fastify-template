@@ -1,5 +1,5 @@
 {
-  "name": "repositories",
+  "name": "@sfto/repositories",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/repositories/src",
   "projectType": "library",

@@ -6,6 +6,10 @@
   "main": "./src/index.js",
   "types": "./src/index.d.ts",
   "dependencies": {
+    "@sfto/controllers": "*",
+    "@sfto/schema": "*",
+    "fastify": "*",
+    "fastify-zod-openapi": "*",
     "tslib": "^2.3.0"
   }
 }
